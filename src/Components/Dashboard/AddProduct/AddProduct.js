@@ -3,7 +3,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 const AddProduct = () => {
   const { register, handleSubmit, reset } = useForm();
-  document.title = "Add a Product";
+
   const onSubmit = (data) => {
     axios
       .post("https://safe-bayou-29542.herokuapp.com/addProduct", data)

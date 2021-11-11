@@ -3,7 +3,6 @@ import React from "react";
 import { useForm } from "react-hook-form";
 const AddReview = () => {
   const { register, handleSubmit, reset } = useForm();
-  document.title = "Add More Trips";
 
   const onSubmit = (data) => {
     axios

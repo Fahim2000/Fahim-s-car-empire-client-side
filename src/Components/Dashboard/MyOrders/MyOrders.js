@@ -5,7 +5,7 @@ import useAuth from "../../../hooks/useAuth";
 const MyOrders = () => {
   const [myOrders, setMyOrders] = useState([]);
   const { user } = useAuth();
-  document.title = "Dashboard | My Orders";
+
   const email = user.email;
   useEffect(() => {
     axios

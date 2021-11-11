@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 const ManageAllOrders = () => {
   const [manageProducts, setManageProducts] = useState([]);
 
-  document.title = "Manage All Trips";
   useEffect(() => {
     axios
       .get("https://safe-bayou-29542.herokuapp.com/allCars")
