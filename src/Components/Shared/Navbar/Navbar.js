@@ -43,16 +43,6 @@ const Navbar = () => {
                       Dashboard
                     </Link>
                   </li>{" "}
-                  {/* <li className="nav-item">
-                  <Link to={`/manageAllTrips`} className="nav-link">
-                    Manage All Trips
-                  </Link>
-                </li>{" "}
-                <li className="nav-item">
-                  <Link to={`/AddMoreTrips`} className="nav-link">
-                    Add Trips
-                  </Link>
-                </li>{" "} */}
                   {user.displayName ? (
                     <span className="me-2 text-dark  bg-info  p-1 px-sm-3 my-sm-2 my-4 fw-bold ">
                       {user.displayName}

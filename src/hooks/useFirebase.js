@@ -63,9 +63,11 @@ const useFirebase = () => {
         // ...
 
         const destination = location?.state?.from || "/";
-        history.replace(destination);
+        history.push(destination);
 
         console.log(result.user);
+
+        window.reload();
       })
       .catch((error) => {
         const errorMessage = error.message;
