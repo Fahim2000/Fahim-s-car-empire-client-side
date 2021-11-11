@@ -84,7 +84,7 @@ const Dashboard = () => {
             </li>
           </ul>
         </div>
-        <div className="col-md-10">
+        <div className="col-md-10" style={{ height: "100vh" }}>
           <Switch>
             <PrivateRoute path={`${path}/pay`}>
               <Payment />

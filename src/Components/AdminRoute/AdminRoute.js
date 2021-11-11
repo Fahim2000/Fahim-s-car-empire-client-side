@@ -4,7 +4,7 @@ import useAuth from "../../hooks/useAuth";
 
 const AdminRoute = ({ children, ...rest }) => {
   const { user, isLoading, admin } = useAuth();
-  if (isLoading) {
+  if (!admin || isLoading) {
     return (
       <div className="d-flex justify-content-center align-items-center spinner">
         <div
