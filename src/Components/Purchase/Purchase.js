@@ -140,7 +140,7 @@ const Purchase = () => {
                   <input
                     className="btn btn-dark"
                     type="submit"
-                    value="Buy the car"
+                    value="Proceed"
                   />
                 </form>
               </div>

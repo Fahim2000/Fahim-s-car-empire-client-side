@@ -41,6 +41,8 @@ const useFirebase = () => {
     setIsLoading(true);
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
+        const newUser = { email, displayName: name };
+        setUser(newUser);
         saveUser(email, name, "POST");
         updateProfile(auth.currentUser, {
           displayName: name,
