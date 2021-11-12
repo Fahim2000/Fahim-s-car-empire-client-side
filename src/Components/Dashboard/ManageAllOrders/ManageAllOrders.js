@@ -59,7 +59,7 @@ const ManageAllOrders = () => {
             alt=""
           />
         </div>
-        <h2 className="text-danger">No trips available</h2>
+        <h2 className="text-danger">No cars available</h2>
       </div>
     );
   } else {
