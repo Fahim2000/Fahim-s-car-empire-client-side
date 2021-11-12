@@ -21,7 +21,7 @@ const AddReview = () => {
       style={{ height: "100vh", marginBottom: "200px" }}
     >
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="mb-3">
+        <div className="my-4">
           <label forhtml="exampleInputName" className="form-label">
             Name of User
           </label>
@@ -32,6 +32,7 @@ const AddReview = () => {
           />
         </div>
         {/* rating */}
+        <h6>Rate us : </h6>
         {[1, 2, 3, 4, 5].map((e, index) => {
           return (
             <div className="form-check form-check-inline">
@@ -50,7 +51,7 @@ const AddReview = () => {
           );
         })}
 
-        <div className="mb-3">
+        <div className="my-4">
           <label forhtml="exampleInputReview" className="form-label">
             Write your Review
           </label>
